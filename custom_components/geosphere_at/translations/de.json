@@ -1,0 +1,90 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Geosphere Austria konfigurieren",
+        "description": "Wähle einen Modus...",
+        "data": {
+          "mode": "Modus"
+        }
+      },
+      "regional": {
+        "title": "Regional wählen",
+        "description": "Wähle einen Standort aus...",
+        "data": {
+          "point_id": "Punkt-ID"
+        }
+      },
+      "local_new": {
+        "title": "Lokale Konfiguration",
+        "description": "Geokoordinaten eingeben...",
+        "data": {
+          "latitude": "Breitengrad",
+          "longitude": "Längengrad"
+        }
+      },
+      "local_update": {
+        "title": "Bestehenden Sensor updaten",
+        "description": "Geokoordinaten und Entry wählen...",
+        "data": {
+          "latitude": "Breitengrad",
+          "longitude": "Längengrad",
+          "existing_entry_id": "Bestehende Integration"
+        }
+      }
+    },
+    "error": {
+      "invalid_selection": "Ungültige Auswahl",
+      "invalid_coordinates": "Ungültige Koordinaten",
+      "no_entry_selected": "Kein Eintrag ausgewählt",
+      "invalid_entry": "Ungültiger Eintrag",
+      "cannot_connect": "Verbindung fehlgeschlagen"
+    },
+    "abort": {
+      "already_configured": "Bereits konfiguriert",
+      "no_unique_id": "Keine eindeutige ID"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Optionen",
+        "description": "Nowcast-Einstellungen",
+        "data": {
+          "nowcast_enabled": "Nowcast aktivieren",
+          "nowcast_latitude": "Breitgrad",
+          "nowcast_longitude": "Längengrad"
+        }
+      }
+    }
+  },
+  "entity": {
+    "weather": {
+      "Aktuelles Wetter": {
+        "name": "Aktuelles Wetter"
+      }
+    },
+    "sensor": {
+      "wind_speed": {
+        "name": "Windgeschwindigkeit"
+      },
+      "gusts": {
+        "name": "Windböen"
+      },
+      "wind_direction": {
+        "name": "Windrichtung"
+      },
+      "precipitation": {
+        "name": "Niederschlag"
+      },
+      "fog_index": {
+        "name": "Sichtindex"
+      },
+      "temperature": {
+        "name": "Lufttemperatur"
+      }
+    }
+  },
+  "services": {},
+  "selector": {}
+}

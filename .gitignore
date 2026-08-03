@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
+/*.py
+/manifest.json
 
 # Virtual environments
 venv/
@@ -17,6 +19,7 @@ venv/
 # HA spezifisch
 ha-config/
 custom_components/*
+!/custom_components/geosphere_at/
 *.sh
 testing_guide.md
 *.yml
