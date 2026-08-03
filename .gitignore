@@ -16,6 +16,7 @@ venv/
 # HA spezifisch
 ha-config/
 custom_components/*
+!custom_components/geosphere_at/
 
 # Docker
 *.pid
