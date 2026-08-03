@@ -35,3 +35,6 @@ testing_guide.md
 *.secret
 *.key
 token.txt
+
+# GitHub Actions
+!/.github/workflows/*.yml
