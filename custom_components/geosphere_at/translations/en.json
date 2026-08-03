@@ -1,90 +1,90 @@
 {
-    "config": {
-        "step": {
-            "user": {
-                "title": "Geosphere Austria konfigurieren",
-                "description": "W\u00e4hle einen Modus...",
-                "data": {
-                    "mode": "Modus"
-                }
-            },
-            "regional": {
-                "title": "Regional w\u00e4hlen",
-                "description": "W\u00e4hle einen Standort aus...",
-                "data": {
-                    "point_id": "Punkt-ID"
-                }
-            },
-            "local_new": {
-                "title": "Lokale Konfiguration",
-                "description": "Geokoordinaten eingeben...",
-                "data": {
-                    "latitude": "Breitengrad",
-                    "longitude": "L\u00e4ngengrad"
-                }
-            },
-            "local_update": {
-                "title": "Bestehenden Sensor updaten",
-                "description": "Geokoordinaten und Entry w\u00e4hlen...",
-                "data": {
-                    "latitude": "Breitengrad",
-                    "longitude": "L\u00e4ngengrad",
-                    "existing_entry_id": "Bestehende Integration"
-                }
-            }
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "mode": "Mode"
         },
-        "error": {
-            "invalid_selection": "Ung\u00fcltige Auswahl",
-            "invalid_coordinates": "Ung\u00fcltige Koordinaten",
-            "no_entry_selected": "Kein Eintrag ausgew\u00e4hlt",
-            "invalid_entry": "Ung\u00fcltiger Eintrag",
-            "cannot_connect": "Verbindung fehlgeschlagen"
+        "description": "Select the configuration mode for GeoSphere Austria",
+        "menu_options": {
+          "regional": "Regional (District/Municipality)",
+          "local_new": "Local (Coordinates - Nowcast only)"
+        }
+      },
+      "regional": {
+        "data": {
+          "point_id": "Location"
         },
-        "abort": {
-            "already_configured": "Bereits konfiguriert",
-            "no_unique_id": "Keine eindeutige ID"
-        }
-    },
-    "options": {
-        "step": {
-            "init": {
-                "title": "Optionen",
-                "description": "Nowcast-Einstellungen",
-                "data": {
-                    "nowcast_enabled": "Nowcast aktivieren",
-                    "nowcast_latitude": "Breitgrad",
-                    "nowcast_longitude": "L\u00e4ngengrad"
-                }
-            }
-        }
-    },
-    "entity": {
-        "weather": {
-            "Aktuelles Wetter": {
-                "name": "Aktuelles Wetter"
-            }
+        "description": "Select your district or municipality from the list"
+      },
+      "local_new": {
+        "data": {
+          "name": "Name",
+          "latitude": "Latitude",
+          "longitude": "Longitude"
         },
-        "sensor": {
-            "wind_speed": {
-                "name": "Windgeschwindigkeit"
-            },
-            "gusts": {
-                "name": "Windb\u00f6en"
-            },
-            "wind_direction": {
-                "name": "Windrichtung"
-            },
-            "precipitation": {
-                "name": "Niederschlag"
-            },
-            "fog_index": {
-                "name": "Sichtindex"
-            },
-            "temperature": {
-                "name": "Lufttemperatur"
-            }
-        }
+        "description": "Enter your exact GPS coordinates for precise location-based forecast"
+      },
+      "local_update": {
+        "data": {
+          "existing_entry_id": "Existing Regional Entry",
+          "latitude": "Latitude",
+          "longitude": "Longitude"
+        },
+        "description": "Add Nowcast functionality to existing regional entry"
+      }
     },
-    "services": {},
-    "selector": {}
+    "error": {
+      "invalid_selection": "Invalid selection",
+      "invalid_coordinates": "Invalid coordinates",
+      "no_entry_selected": "No entry selected",
+      "invalid_entry": "Invalid entry",
+      "wrong_mode": "Cannot add Nowcast to non-regional entries"
+    },
+    "abort": {
+      "already_configured": "This location is already configured",
+      "use_options_flow": "Use Options Flow to modify settings"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "nowcast_enabled": "Enable Nowcast",
+          "nowcast_latitude": "Nowcast Latitude",
+          "nowcast_longitude": "Nowcast Longitude"
+        },
+        "description": "Configure additional Nowcast settings for hybrid forecast"
+      }
+    },
+    "error": {
+      "invalid_coordinates": "Invalid coordinates"
+    }
+  },
+  "entity": {
+    "weather": {
+      "geosphere_at_weather": {
+        "name": "Current Weather"
+      }
+    },
+    "sensor": {
+      "temperature": {
+        "name": "Temperature"
+      },
+      "wind_speed": {
+        "name": "Wind Speed"
+      },
+      "wind_gust": {
+        "name": "Wind Gusts"
+      },
+      "wind_bearing": {
+        "name": "Wind Direction"
+      },
+      "precipitation": {
+        "name": "Precipitation"
+      }
+    }
+  },
+  "services": {},
+  "application_credentials": {}
 }
