@@ -45,12 +45,15 @@
 ### Regionaler Forecast (Bezirk/Gemeinde)
 
 1. Wähle beim Setup **"Regional (Vorhersage nach Bezirk/Gemeinde)"**
+
    ![Modus Auswahl](./screenshots/Regional.png)
 2. Warte kurz, bis die Liste der Standorte lädt
 3. Wähle deinen Standort aus der Dropdown-Liste
+
    ![Standort Auswahl](./screenshots/Ort_auswehlen.png)
 4. Klicke auf **Absenden**
 5. Fertig! Dein Wetter-Sensor ist aktiv
+
    ![Täglicher Forecast](./screenshots/Taeglicher_Forecast_Point.png)
    ![Stündlicher Forecast](./screenshots/Stuendlicher_Forecast_Point.png)
 
@@ -61,11 +64,14 @@
 Nutze diesen Modus, wenn du präzise GPS-Koordinaten verwenden möchtest:
 
 1. Wähle beim Setup **"Lokal (Neuer Hub mit Lat/Lon)"**
+
    ![Auswahl Lokaler Forecast](./screenshots/Lokal.png)
 2. Gib deine Breiten- und Längengrade ein (z.B. via OpenStreetMap)
+
    ![Lokale Koordinaten Angabe](./screenshots/Lokale_Config.png)
 3. Optional: Benenne den Sensor (z.B. **"Garten"**)
 4. Klicke auf **Absenden**
+
    ![Nowcast Forecast](./screenshots/Nowcast.png)
   
 
@@ -100,10 +106,12 @@ Der Hybrid-Modus kombiniert die besten Eigenschaften beider Datenquellen:
    - Gehe zu **Einstellungen → Geräte & Dienste**
    - Klicke auf deinen **Geosphere Austria** Eintrag
    - Wähle **Konfigurieren** (Zahnrad-Symbol)
+
    ![Hybrid Koordinaten Angabe](./screenshots/Hybride_Config.png)
 2. Aktiviere **"Nowcast aktivieren"**
 3. Gib genauer Koordinaten ein (optional, Standard = Standort des regionalen Sensors)
 4. Speichere die Änderungen
+
    ![Hybrider Forecast](./screenshots/Hybrider_Forecast.png)
 
 ---
@@ -162,7 +170,6 @@ Für Debugging-Informationen:
 1. Gehe zu **Einstellungen → Systeme**
 2. Klicke auf **Protokolle**
 3. Filtere nach **"Geosphere"**
-   <!-- ![Screenshot: HA Logs nach Geosphere filtern] -->
 
 ---
 
