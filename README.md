@@ -2,6 +2,9 @@
 
 *Eine HACS Integration für Home Assistant zur Anzeige von Wetterdaten von GeoSphere Austria.*
 
+[![GitHub Release](https://img.shields.io/github/v/release/juri-w/hass-geosphere-at)](https://github.com/juri-w/hass-geosphere-at/releases)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 ## Inhaltsverzeichnis
 
 - [Installation](#installation)
