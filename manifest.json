@@ -7,7 +7,7 @@
   "integration_type": "hub",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/juri-w/hass-geosphere-at/issues",
-  "requirements": ["aiohttp>=3.9.0"],
   "loggers": ["geosphere_at"],
+  "requirements": ["aiohttp>=3.9.0"],
   "version": "1.0.2"
 }
