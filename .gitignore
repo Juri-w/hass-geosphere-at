@@ -6,7 +6,6 @@ __pycache__/
 
 # Virtual environments
 venv/
-.env
 
 # IDE
 .vscode/
@@ -17,9 +16,6 @@ venv/
 # HA spezifisch
 ha-config/
 custom_components/*
-*.sh
-testing_guide.md
-*.yml
 
 # Docker
 *.pid

@@ -1,0 +1,25 @@
+services:
+  homeassistant:
+    container_name: homeassistant-local
+    image: "ghcr.io/home-assistant/home-assistant:stable"
+    volumes:
+      - ./custom_components:/config/custom_components
+      - ./ha-config:/config
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      # Web-Oberfläche
+      - "8123:8123"
+    environment:
+      - TZ=${TZ:-Europe/Vienna}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8123/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+networks:
+  default:
+    name: ha-local-net
+    driver: bridge
