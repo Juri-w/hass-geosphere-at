@@ -16,7 +16,7 @@ fi
 # Kopiere die Integration in den custom_components Ordner
 cp *.py custom_components/geosphere_at/
 cp manifest.json custom_components/geosphere_at/
-cp Readme.md custom_components/geosphere_at/
+cp README.md custom_components/geosphere_at/
 cp -r translations custom_components/geosphere_at/
 
 # Pullneuestes HA Image
