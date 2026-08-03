@@ -1,0 +1,90 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Geosphere Austria konfigurieren",
+                "description": "W\u00e4hle einen Modus...",
+                "data": {
+                    "mode": "Modus"
+                }
+            },
+            "regional": {
+                "title": "Regional w\u00e4hlen",
+                "description": "W\u00e4hle einen Standort aus...",
+                "data": {
+                    "point_id": "Punkt-ID"
+                }
+            },
+            "local_new": {
+                "title": "Lokale Konfiguration",
+                "description": "Geokoordinaten eingeben...",
+                "data": {
+                    "latitude": "Breitengrad",
+                    "longitude": "L\u00e4ngengrad"
+                }
+            },
+            "local_update": {
+                "title": "Bestehenden Sensor updaten",
+                "description": "Geokoordinaten und Entry w\u00e4hlen...",
+                "data": {
+                    "latitude": "Breitengrad",
+                    "longitude": "L\u00e4ngengrad",
+                    "existing_entry_id": "Bestehende Integration"
+                }
+            }
+        },
+        "error": {
+            "invalid_selection": "Ung\u00fcltige Auswahl",
+            "invalid_coordinates": "Ung\u00fcltige Koordinaten",
+            "no_entry_selected": "Kein Eintrag ausgew\u00e4hlt",
+            "invalid_entry": "Ung\u00fcltiger Eintrag",
+            "cannot_connect": "Verbindung fehlgeschlagen"
+        },
+        "abort": {
+            "already_configured": "Bereits konfiguriert",
+            "no_unique_id": "Keine eindeutige ID"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "Optionen",
+                "description": "Nowcast-Einstellungen",
+                "data": {
+                    "nowcast_enabled": "Nowcast aktivieren",
+                    "nowcast_latitude": "Breitgrad",
+                    "nowcast_longitude": "L\u00e4ngengrad"
+                }
+            }
+        }
+    },
+    "entity": {
+        "weather": {
+            "Aktuelles Wetter": {
+                "name": "Aktuelles Wetter"
+            }
+        },
+        "sensor": {
+            "wind_speed": {
+                "name": "Windgeschwindigkeit"
+            },
+            "gusts": {
+                "name": "Windb\u00f6en"
+            },
+            "wind_direction": {
+                "name": "Windrichtung"
+            },
+            "precipitation": {
+                "name": "Niederschlag"
+            },
+            "fog_index": {
+                "name": "Sichtindex"
+            },
+            "temperature": {
+                "name": "Lufttemperatur"
+            }
+        }
+    },
+    "services": {},
+    "selector": {}
+}

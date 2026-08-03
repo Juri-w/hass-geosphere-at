@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# HA spezifisch
+ha-config/
+custom_components/*
+*.sh
+testing_guide.md
+*.yml
+
+# Docker
+*.pid
+*.tag
+
+# Secrets
+*.secret
+*.key
+token.txt
