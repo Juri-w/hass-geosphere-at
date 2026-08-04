@@ -8,7 +8,7 @@ __pycache__/
 /*.py
 /manifest.json
 /translations/*
-/brands/*
+/brand/*
 
 # Virtual environments
 venv/
