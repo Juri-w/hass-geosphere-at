@@ -35,19 +35,38 @@ from .const import (
 _LOGGER = logging.getLogger(__name__)
 
 SYMBOL_TO_CONDITION = {
-    1: ATTR_CONDITION_SUNNY,           # Sonnig
-    2: ATTR_CONDITION_PARTLYCLOUDY,    # Teilweise bewölkt (Morgen)
-    3: ATTR_CONDITION_PARTLYCLOUDY,    # Teilweise bewölkt (Tag)
-    4: ATTR_CONDITION_CLOUDY,          # Überwiegend bewölkt
-    5: ATTR_CONDITION_CLOUDY,          # Überwiegend bewölkt
-    6: ATTR_CONDITION_SNOWY_RAINY,     # Schneeregen
-    7: ATTR_CONDITION_WINDY,           # Windig
-    8: ATTR_CONDITION_FOG,             # Nebel
-    9: ATTR_CONDITION_HAIL,            # Hagel
-    10: ATTR_CONDITION_RAINY,          # Regen/Niederschlag
-    17: ATTR_CONDITION_POURING,       # Pouring (heavy rain)
-    26: ATTR_CONDITION_LIGHTNING_RAINY,# Gewitter
-    203: ATTR_CONDITION_LIGHTNING,     # Test: Lightning (no rain)
+    1: ATTR_CONDITION_SUNNY,           # wolkenlos
+    2: ATTR_CONDITION_PARTLYCLOUDY,    # heiter
+    3: ATTR_CONDITION_PARTLYCLOUDY,    # wolkig
+    4: ATTR_CONDITION_CLOUDY,          # stark bewölkt
+    5: ATTR_CONDITION_CLOUDY,          # bedeckt
+    6: ATTR_CONDITION_FOG,             # Bodennebel
+    7: ATTR_CONDITION_FOG,             # Hochnebel
+    8: ATTR_CONDITION_RAINY,          # leichter Regen
+    9: ATTR_CONDITION_RAINY,          # mäßiger Regen
+    10: ATTR_CONDITION_POURING,          # starker Regen
+    11: ATTR_CONDITION_SNOWY_RAINY,     # Schneeregen
+    12: ATTR_CONDITION_SNOWY_RAINY,     # Schneeregen
+    13: ATTR_CONDITION_SNOWY_RAINY,     # Schneeregen
+    14: ATTR_CONDITION_SNOWY,           # leichter Schneefall
+    15: ATTR_CONDITION_SNOWY,           # mäßiger Schneefall
+    16: ATTR_CONDITION_HAIL,          # starker Schneefall
+    17: ATTR_CONDITION_RAINY,          # Regenschauer
+    18: ATTR_CONDITION_RAINY,          # Regenschauer
+    19: ATTR_CONDITION_POURING,       # starker Regenschauer
+    20: ATTR_CONDITION_SNOWY_RAINY,       # Schneeregenschauer
+    21: ATTR_CONDITION_SNOWY_RAINY,       # Schneeregenschauer
+    22: ATTR_CONDITION_SNOWY_RAINY,       # Schneeregenschauer
+    23: ATTR_CONDITION_SNOWY,       # Schneeschauer
+    24: ATTR_CONDITION_SNOWY,       # Schneeschauer
+    25: ATTR_CONDITION_HAIL,       # starker Schneeschauer
+    26: ATTR_CONDITION_SNOWY_RAINY,       # Gewitter
+    27: ATTR_CONDITION_SNOWY_RAINY,       # Gewitter
+    28: ATTR_CONDITION_LIGHTNING,           # starkes Gewitter
+    29: ATTR_CONDITION_SNOWY_RAINY,           # Gewitter mit Schneefall
+    30: ATTR_CONDITION_LIGHTNING,           # starkes Gewitter mit Schneefall
+    31: ATTR_CONDITION_LIGHTNING_RAINY,# Gewitter mit Schneefall
+    32: ATTR_CONDITION_LIGHTNING_RAINY,     # Test: Lightning (no rain)
 }
 
 async def async_setup_entry(
