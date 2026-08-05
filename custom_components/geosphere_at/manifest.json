@@ -9,5 +9,5 @@
   "issue_tracker": "https://github.com/juri-w/hass-geosphere-at/issues",
   "loggers": ["geosphere_at"],
   "requirements": ["aiohttp>=3.9.0"],
-  "version": "1.0.2"
+  "version": "1.0.3"
 }
