@@ -36,12 +36,12 @@ _LOGGER = logging.getLogger(__name__)
 
 SYMBOL_TO_CONDITION = {
     1: ATTR_CONDITION_SUNNY,           # wolkenlos
-    2: ATTR_CONDITION_PARTLYCLOUDY,    # heiter
+    2: ATTR_CONDITION_SUNNY,    # heiter
     3: ATTR_CONDITION_PARTLYCLOUDY,    # wolkig
     4: ATTR_CONDITION_CLOUDY,          # stark bewölkt
     5: ATTR_CONDITION_CLOUDY,          # bedeckt
     6: ATTR_CONDITION_FOG,             # Bodennebel
-    7: ATTR_CONDITION_FOG,             # Hochnebel
+    7: ATTR_CONDITION_WINDY,             # Hochnebel
     8: ATTR_CONDITION_RAINY,          # leichter Regen
     9: ATTR_CONDITION_RAINY,          # mäßiger Regen
     10: ATTR_CONDITION_POURING,          # starker Regen
@@ -60,13 +60,13 @@ SYMBOL_TO_CONDITION = {
     23: ATTR_CONDITION_SNOWY,       # Schneeschauer
     24: ATTR_CONDITION_SNOWY,       # Schneeschauer
     25: ATTR_CONDITION_HAIL,       # starker Schneeschauer
-    26: ATTR_CONDITION_SNOWY_RAINY,       # Gewitter
-    27: ATTR_CONDITION_SNOWY_RAINY,       # Gewitter
-    28: ATTR_CONDITION_LIGHTNING,           # starkes Gewitter
+    26: ATTR_CONDITION_LIGHTNING_RAINY,       # Gewitter
+    27: ATTR_CONDITION_LIGHTNING_RAINY,       # Gewitter
+    28: ATTR_CONDITION_LIGHTNING_RAINY,           # starkes Gewitter
     29: ATTR_CONDITION_SNOWY_RAINY,           # Gewitter mit Schneefall
     30: ATTR_CONDITION_LIGHTNING,           # starkes Gewitter mit Schneefall
     31: ATTR_CONDITION_LIGHTNING_RAINY,# Gewitter mit Schneefall
-    32: ATTR_CONDITION_LIGHTNING_RAINY,     # Test: Lightning (no rain)
+    32: ATTR_CONDITION_LIGHTNING_RAINY,     # Starkes Gewitter mit Schneefall
 }
 
 async def async_setup_entry(
